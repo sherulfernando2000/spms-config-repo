@@ -2,10 +2,7 @@ spring:
   application:
     name: user-service
 
-server:
-  port: 8081
-
-datasource:
+  datasource:
     url: jdbc:mysql://localhost:3306/spms_user_db?createDatabaseIfNotExist=true
     username: root
     password: Ijse@123
@@ -16,6 +13,13 @@ datasource:
       ddl-auto: update
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL8Dialect  
+
+server:
+  port: 8081
+
+
+
+  
 
 eureka:
   client:
